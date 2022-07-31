@@ -39,6 +39,8 @@
         <link rel="stylesheet" href="css/main_responsive.css">
         <link rel="stylesheet" href="css/style-color1.css">
         
+        <!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body id="menu" class="alt-bg">
@@ -83,7 +85,7 @@
 					<span class="title"></span>
 				</a>
 			</div>
-			<ul id="qmenu" class="qmenu">
+			<ul id="qmenu" class="qmenu pl-0" style="padding-left: 0px;">
 				<li data-menuanchor="home">
 					<a href="#home" class=""><i class="fa fa-home"></i>
 					</a>
@@ -105,9 +107,9 @@
 					<span class="title">Contact</span>
 				</li>
 				<li data-menuanchor="portofolio">
-					<a href="#portofolio"><i class="fa fa-database"></i>
+					<a href="#portofolio"><i class="fa fa-github"></i>
 					</a>
-					<span class="title">portofolio</span>
+					<span class="title">Portofolio</span>
 				</li>
 			</ul>
 		</nav>
@@ -166,18 +168,18 @@
 						</div>
 					</div>
 					<!-- Logo instead -->
-<!--
+					<!--
 					<div class="logo">
 						<a href="#">
 							<img src="img/logo_only.png">
 						</a>
 					</div>
--->
+					-->
 					
 					<div class="elem-bottom">
 						<div class="deco"></div>
 						
-<!--						<span class="days">12</span><span class="thin">D</span>-->
+						<!--<span class="days">12</span><span class="thin">D</span>-->
 						<span class="hours">PROGRAMMER</span><span class="thin"><!-- H --></span>
 						<!-- <span class="minutes">45</span><span class="thin">MN</span>
 						<span class="seconds">36</span><span class="thin">S</span> -->
@@ -320,7 +322,7 @@
 						<!-- Begin Of Page SubSction -->
 						<div class="contact">
 							<div class="row">
-								<div class="medium-6 columns left">
+								<div class="col-md-6 columns left">
 									<ul>
 										<li>
 											<h4>Email</h4>
@@ -337,7 +339,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="medium-6 columns social-links right">
+								<div class="col-md-6 columns social-links right">
 									<ul>
 
 										<!-- legal notice -->
@@ -372,82 +374,102 @@
 				<!-- end of contact information -->
 				
 				<!-- begin of contact message --> 
-				<div class="slide" id="s-message" data-anchor="message">
-					<section class="content">
-						<header class="p-title">
-							<h3>Write to us<i class="fa fa-envelope">
-								</i>
-							</h3>
-							<ul class="buttons">
-								<li class="show-for-medium-up">
-									<a title="About" href="#about-me"><i class="fa fa-user"></i></a>
-								</li>
-								<li>
-									<a title="Contact" href="#contact/information"><i class="fa fa-address-book-o"></i></a>
-								</li>
-								<!--<li>
-									<a title="Message" href="#contact/message"><i class="ion ion-email"></i></a>
-								</li>-->
-							</ul>
-						</header>
-						<!-- Begin Of Page SubSction -->
-						
-						<div class="page-block c-right v-zoomIn">
-							<div class="wrapper">
-								<div>
-									<form class="message form send_message_form" method="get" action="#">
-										<div class="fields clearfix">
-											<div class="input">
-												<label for="mes-name">Name </label>
-												<input id="mes-name" name="name" type="text" placeholder="Your Name" required></div>
-											<div class="buttons">
-												<button id="submit-message" class="button email_b" name="submit_message">Ok</button>
-											</div>
-										</div>
-										<div class="fields clearfix">
-											<div class="input">
-												<label for="mes-email">Email </label>
-												<input id="mes-email" type="email" placeholder="Email Address" name="email" required>
-											</div>
-										</div>
-										<div class="fields clearfix no-border">
-											<label for="mes-text">Message </label>
-											<textarea id="mes-text" placeholder="Message ..." name="message" required></textarea>
-
-											<div>
-												<p class="message-ok invisible">Your message has been sent, thank you.</p>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
+				 <footer class="p-footer p-scrolldown">
+                    <a href="#portofolio">
+                        <div class="arrow-d">
+							<div class="before">About Me</div>
+							<div class="after">Portofolio</div>
+							<div class="circle"><i class="fa fa-github"></i></div>
 						</div>
-						<!-- End Of Page SubSction -->
-					</section>
-						
-				</div>
+                    </a>                        
+                </footer>
 				<!-- End of contact message -->
             </div>
             <!-- End of Contact page  -->   
 
-             <!-- Begin of about us page -->
+             <!-- Begin of portofolio us page -->
             <div class="section page-portofolio page page-cent" id="s-portofolio">
-                <section class="content">
+                <section class="content" data-anchor="portofolio">
                     <header class="p-title">
-                        <h3>Portofolio list<i class="fa fa-user-circle-o">
+                        <h3>Portofolio lists<i class="fa fa-user-circle-o">
                             </i>
                         </h3>
-						
+						<article class="text">
+							<p>To ensure data security, the application image is not displayed.</p>
+						</article>
                     </header>
-                    <article class="text">
-                   
-                    </article>
+                    <div class="container" style="">
+                    	<div class="">
+                    		<div class="row">
+                    			<div class="col-md-4 mt-1">
+						          <div class="card shadow-sm">
+						            <img style="height: 100px;" src="img/asset/telkomsel.png">
+						            <div class="card-body">
+						              <p class="card-text text-black">FAST (Recon MyTsel, Prepayment, dll) (at PT TELEKOMUNIKASI SELULAR)</p>
+						              <div class="d-flex justify-content-between align-items-center">
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="col-md-4 mt-1">
+						          <div class="card shadow-sm">
+						            <img style="height: 100px;" src="img/asset/telkomsel.png">
+						            <div class="card-body">
+						              <p class="card-text text-black">Webbase PSAK73 (2020,2021,2022) (at PT TELEKOMUNIKASI SELULAR)</p>
+						              <div class="d-flex justify-content-between align-items-center">
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="col-md-4 mt-1">
+						          <div class="card shadow-sm">
+						            <img style="height: 100px;" src="img/asset/telkomsel.png">
+						            <div class="card-body">
+						              <p class="card-text text-black">ISM -Internal Social Media (at PT TELEKOMUNIKASI SELULAR)</p>
+						              <div class="d-flex justify-content-between align-items-center">
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+
+						        <div class="col-md-4 mt-1">
+						          <div class="card shadow-sm">
+						            <img style="height: 100px;" src="img/asset/carsworld.png">
+						            <div class="card-body">
+						              <p class="card-text text-black">Cars World  (at PT BINTRACO DHARMA Tbk)</p>
+						              <div class="d-flex justify-content-between align-items-center">
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="col-md-4 mt-1">
+						          <div class="card shadow-sm">
+						            <img style="height: 100px;" src="img/asset/bfi.jpg">
+						            <div class="card-body">
+						              <p class="card-text text-black">Mobile Collection Project (at PT BFI Finance Indonesia Tbk)</p>
+						              <div class="d-flex justify-content-between align-items-center">
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="col-md-4 mt-1">
+						          <div class="card shadow-sm">
+						            <img style="height: 100px;" src="img/asset/andalan.jpg">
+						            <div class="card-body">
+						              <p class="card-text text-black">Mobile Survey Project (at PT Andalan Finance Indonesia)</p>
+						              <div class="d-flex justify-content-between align-items-center">
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+                    		</div>
+                    	</div>
+                    </div>
                 </section>
                 <footer class="p-footer p-scrolldown">
                     <a href="#contact">
                         <div class="arrow-d">
 							<div class="before">Contact</div>
-							<div class="after">Message</div>
 							<div class="circle"><i class="fa fa-github"></i></div>
 						</div>
                     </a>                        
@@ -495,18 +517,8 @@
         
 		<!-- Javascript main files -->
         <script src="js/main.js"></script>
-         
-
-        <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
-        <!--<script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src="//www.google-analytics.com/analytics.js";
-            r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));
-            ga("create","UA-XXXXX-X");ga("send","pageview");
-        </script>-->
+         <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 
-<!-- Mirrored from highhay.com/demos/timex/index-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Dec 2016 21:36:09 GMT -->
 </html>

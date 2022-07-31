@@ -136,7 +136,7 @@ $(document).ready(function() {
 	/** Init fullpage.js */
     $('#mainpage').fullpage({
 		menu: '#qmenu',
-		anchors: ['home',  'register', 'about-me', 'contact'],
+		anchors: ['home',  'register', 'about-me', 'contact', 'portofolio'],
 //        verticalCentered: false,
 //        resize : false,
 //		responsive: 900,
@@ -163,51 +163,3 @@ $(document).ready(function() {
 });
 
 
-
-// Email validation text, uncomment below to use them
-/*
-// Email registration 
-var email_reg_elem = document.getElementById("reg-email");
-email_reg_elem.oninvalid = function(e) {
-	e.target.setCustomValidity("");
-	if (!e.target.validity.valid) {
-		e.target.setCustomValidity("This email field cannot be left blank");
-	}
-};
-email_reg_elem.oninput = function(e) {
-	e.target.setCustomValidity("");
-};
-// email message
-var email_message_elem = document.getElementById("mes-email");
-email_message_elem.oninvalid = function(e) {
-	e.target.setCustomValidity("");
-	if (!e.target.validity.valid) {
-		e.target.setCustomValidity("This email field cannot be left blank");
-	}
-};
-// name message
-email_message_elem.oninput = function(e) {
-	e.target.setCustomValidity("");
-};
-var name_message_elem = document.getElementById("mes-name");
-name_message_elem.oninvalid = function(e) {
-	e.target.setCustomValidity("");
-	if (!e.target.validity.valid) {
-		e.target.setCustomValidity("This name field cannot be left blank");
-	}
-};
-// text message
-name_message_elem.oninput = function(e) {
-	e.target.setCustomValidity("");
-};
-var text_message_elem = document.getElementById("mes-text");
-text_message_elem.oninvalid = function(e) {
-	e.target.setCustomValidity("");
-	if (!e.target.validity.valid) {
-		e.target.setCustomValidity("This text field cannot be left blank");
-	}
-};
-text_message_elem.oninput = function(e) {
-	e.target.setCustomValidity("");
-};
-*/
